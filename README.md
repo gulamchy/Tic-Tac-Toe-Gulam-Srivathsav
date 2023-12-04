@@ -5,7 +5,7 @@
 2. Srivathsav Velpuri
 
 ## API Gateway link
-- [API Gateway link](https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod)
+- [API Gateway link](https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod)
 
 ##Most challenging part**
 - The most challenging part of the assignment is to create the database in DynamoDB and fetch the game logic. We struggled to implement it using DynamoDB.

@@ -37,8 +37,8 @@ const performMove = async (gameId, cell, cellValue, user) => {
 
 // Example usage:
 const gameId = '5b5ee7d8'; // Replace with the actual game ID
-const cell = 'a9'; // Replace with the actual cell where the move is made
-const user = 'myfirstuser'; // Replace with the actual user making the move
-const cellValue = 1;
+const cell = 'a2'; // Replace with the actual cell where the move is made
+const user = 'theseconduser'; // Replace with the actual user making the move
+const cellValue = 2;
 
 performMove(gameId, cell, cellValue, user);

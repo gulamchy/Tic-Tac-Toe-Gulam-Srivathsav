@@ -3,7 +3,7 @@
 _________________________________________________________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________   FIRST USER REGISTRATION    ______________________________________________________________________________
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/users \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/users \
   -H 'Content-Type: application/json' \
   -d '{
 	"username": "myfirstuser",
@@ -14,7 +14,7 @@ curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/users \
 _________________________________________________________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________   SECOND USER REGISTRATION    _____________________________________________________________________________
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/users \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/users \
   -H 'Content-Type: application/json' \
   -d '{
 	"username": "theseconduser",
@@ -26,7 +26,7 @@ curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/users \
 _________________________________________________________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________       FIRST USER LOGIN       ______________________________________________________________________________
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/login \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/login \
   -H 'Content-Type: application/json' \
   -d '{
 	"username": "myfirstuser",
@@ -44,7 +44,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________   SECOND USER LOGIN    _____________________________________________________________________________
 
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/login \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/login \
   -H 'Content-Type: application/json' \
   -d '{
 	"username": "theseconduser",
@@ -61,7 +61,7 @@ export SECOND_ID_TOKEN=<SECOND_ID_TOKEN>
 _________________________________________________________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________        CREATING GAME          _____________________________________________________________________________
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/games \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/games \
  -H 'Content-Type: application/json' \
   -H "Authorization: <FIRST_ID_TOKEN>" \
   -d '{
@@ -73,14 +73,14 @@ ________________________________________________________________________________
 _____________________________________________________________________________          GAME TOKEN           _____________________________________________________________________________
 
 
-export GAME_ID=<GAME_ID_TOKEN>
+export GAME_ID=ad0d3a0b
 
 
 
 _________________________________________________________________________________________________________________________________________________________________________________________
 _____________________________________________________________________________          FETCH GAME           _____________________________________________________________________________
 
-curl -X GET https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/games/<GAME_ID_TOKEN>
+curl -X GET https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/games/ad0d3a0b
 
 
 
@@ -89,7 +89,7 @@ ________________________________________________________________________________
 __________________________________________________________________________     GAME MOVE FOR SECOND USER      _____________________________________________________________________________
 
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/games/<GAME_ID_TOKEN> \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/games/ad0d3a0b \
   -H "Authorization: <SECOND_ID_TOKEN>" \
   -H 'Content-Type: application/json' \
   -d '{
@@ -101,7 +101,7 @@ curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/games/<
 ___________________________________________________________________________________________________________________________________________________________________________________________
 __________________________________________________________________________     GAME MOVE FOR FIRST USER      _____________________________________________________________________________
 
-curl -X POST https://q56pua11s5.execute-api.us-east-1.amazonaws.com/prod/games/<GAME_ID_TOKEN> \
+curl -X POST https://leua6lifk6.execute-api.us-east-1.amazonaws.com/prod/games/ad0d3a0b \
   -H "Authorization: <FIRST_ID_TOKEN>" \
   -H 'Content-Type: application/json' \
   -d '{
